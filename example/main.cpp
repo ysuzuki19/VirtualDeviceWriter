@@ -62,7 +62,7 @@ int main (int argc, char* argv[])
 
   cv::Mat frame;
   EventFrequency freq;
-  VirtualPublisher pub (DEVICE_ID_OUT, WIDTH, HEIGHT);
+  VirtualDeviceWriter pub (DEVICE_ID_OUT, WIDTH, HEIGHT);
 
   while (cap.read (frame))
   {

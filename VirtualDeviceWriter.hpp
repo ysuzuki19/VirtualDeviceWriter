@@ -11,7 +11,7 @@
 #include <sys/ioctl.h>
 #include <linux/videodev2.h>
 
-class VirtualPublisher {
+class VirtualDeviceWriter {
   private:
     int fdwr_;
     size_t frame_size_;
@@ -63,7 +63,7 @@ class VirtualPublisher {
     }
 
   public:
-    VirtualPublisher (int device_id, std::size_t width, std::size_t height) {
+    VirtualDeviceWriter (int device_id, std::size_t width, std::size_t height) {
       this->init (device_id, width, height);
     }
 
