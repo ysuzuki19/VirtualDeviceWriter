@@ -69,8 +69,8 @@ class VirtualDeviceWriter {
 
     void write (cv::Mat & img) {
       //FIXME:
-      cv::cvtColor (img, img, cv::COLOR_BGR2RGB);
-      cv::cvtColor (img, img, cv::COLOR_BGR2RGB);
+      //cv::cvtColor (img, img, cv::COLOR_BGR2RGB);
+      //cv::cvtColor (img, img, cv::COLOR_BGR2RGB);
 
       cv::imencode (".jpeg", img, jpeg_img_);
 
